@@ -1,0 +1,40 @@
+.mainContainer {
+    span.bold {
+        font-weight: bold;
+    }
+    .listHeader {
+        padding: 0;
+        li {
+            display: inline-block;
+            list-style-type: none;
+            a {
+                position: relative;
+                box-sizing: border-box;
+                padding: 20px;
+                display: inline-block;
+                text-decoration: none;
+                color: black;
+                .normal {
+                    position: absolute;
+                    left: 0;
+                    
+                    width: 100%;
+                    text-align: center;
+                    opacity: 1;
+                }
+                .bold {
+                    opacity: 0;
+                }
+                &.active {
+                    .normal {
+                        opacity: 0;
+                    }
+                    .bold {
+                        opacity: 1;
+                    }
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+}

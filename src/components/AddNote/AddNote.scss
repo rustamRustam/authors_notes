@@ -1,0 +1,32 @@
+.addNoteContainer {
+    .lineBlock {
+        display: flex;
+        justify-content: center;
+        &>div {
+            flex-grow: 1;
+        }
+    }
+
+    .buttonContainer {
+        text-align: right;
+        .buttonAddNote {
+            display: inline-block;
+            line-height: 1;
+            padding: 10px;
+            font-size: 110%;
+            font-weight: bold;
+
+            color: white;
+            border-radius: 8px;
+
+            &.active {
+                background-color: #0101b9;
+                cursor: pointer;
+            }
+            &.disabled {
+                background-color: #777;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+.noteViewContainer {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 270px;
+    .dateNoteView,
+    .signNoteView {
+        font-size: 75%;
+        color: gray;
+    }
+
+    .numerNoteView {
+        font-weight: bold;
+    }
+
+    .text_dots{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .textNoteView {
+        height: 2em;
+        width: 270px-16px;
+    }
+
+}
